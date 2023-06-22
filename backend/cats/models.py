@@ -53,14 +53,14 @@ class AchievementCat(models.Model):
 
     def __str__(self):
         return f'{self.achievement} {self.cat}'
-<<<<<<< HEAD
+
     
     class Meta:
         verbose_name = 'Достижение кота'
         verbose_name_plural = 'Достижения котов'
-=======
+
 
     class Meta:
         verbose_name = 'Достижение кота'
         verbose_name_plural = 'Достижения котов'
->>>>>>> 19ba369 (починил сертификат)
+
