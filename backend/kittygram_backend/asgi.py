@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 19ba369 (починил сертификат)
 import os
 
 from django.core.asgi import get_asgi_application
