@@ -15,6 +15,10 @@ class Achievement(models.Model):
         verbose_name = 'Достижение'
         verbose_name_plural = 'Достижения'
 
+    class Meta:
+        verbose_name = 'Достижение'
+        verbose_name_plural = 'Достижения'
+
 
 class Cat(models.Model):
     name = models.CharField(max_length=16)
@@ -38,6 +42,10 @@ class Cat(models.Model):
         verbose_name = 'Кот'
         verbose_name_plural = 'Коты'
 
+    class Meta:
+        verbose_name = 'Кот'
+        verbose_name_plural = 'Коты'
+
 
 class AchievementCat(models.Model):
     achievement = models.ForeignKey(Achievement, on_delete=models.CASCADE)
@@ -45,7 +53,14 @@ class AchievementCat(models.Model):
 
     def __str__(self):
         return f'{self.achievement} {self.cat}'
+<<<<<<< HEAD
     
     class Meta:
         verbose_name = 'Достижение кота'
         verbose_name_plural = 'Достижения котов'
+=======
+
+    class Meta:
+        verbose_name = 'Достижение кота'
+        verbose_name_plural = 'Достижения котов'
+>>>>>>> 19ba369 (починил сертификат)
