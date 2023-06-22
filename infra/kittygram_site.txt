@@ -1,7 +1,7 @@
 IP: 84.252.136.106;
 name_taski: https://yavasilekretsu1.zapto.org/;
 name_kittygram: https://kittygram1234.ddns.net/;
-login: ihnupfidi;
+login: ihnupfidi; for.org
 password: vasea011; 
-login_for: ihnupfidi1;
+login_for: ihnupfidi1; for.net
 password: vasea011;
