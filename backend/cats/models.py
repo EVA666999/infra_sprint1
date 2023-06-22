@@ -10,6 +10,10 @@ class Achievement(models.Model):
 
     def __str__(self):
         return self.name
+    
+    class Meta:
+        verbose_name = 'Достижение'
+        verbose_name_plural = 'Достижения'
 
 
 class Cat(models.Model):
@@ -29,6 +33,10 @@ class Cat(models.Model):
 
     def __str__(self):
         return self.name
+    
+    class Meta:
+        verbose_name = 'Кот'
+        verbose_name_plural = 'Коты'
 
 
 class AchievementCat(models.Model):
@@ -37,3 +45,7 @@ class AchievementCat(models.Model):
 
     def __str__(self):
         return f'{self.achievement} {self.cat}'
+    
+    class Meta:
+        verbose_name = 'Достижение кота'
+        verbose_name_plural = 'Достижения котов'
