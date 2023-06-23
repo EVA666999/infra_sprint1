@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from models import Achievement, AchievementCat, Cat
+from .models import Achievement, AchievementCat, Cat
 
 class AchievementAdmin(admin.ModelAdmin):
     list_display = ('name',)
