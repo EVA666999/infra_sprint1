@@ -8,21 +8,12 @@ User = get_user_model()
 class Achievement(models.Model):
     name = models.CharField(max_length=64)
 
+    class Meta:
+        verbose_name = 'Достижение'
+        verbose_name_plural = 'Достижения'
+
     def __str__(self):
         return self.name
-    
-    class Meta:
-        verbose_name = 'Достижение'
-        verbose_name_plural = 'Достижения'
-
-    class Meta:
-        verbose_name = 'Достижение'
-        verbose_name_plural = 'Достижения'
-
-    class Meta:
-        verbose_name = 'Достижение'
-        verbose_name_plural = 'Достижения'
-
 
 class Cat(models.Model):
     name = models.CharField(max_length=16)
@@ -39,31 +30,23 @@ class Cat(models.Model):
         default=None
         )
 
+
+    class Meta:
+        verbose_name = 'Кот'
+        verbose_name_plural = 'Коты'
+
     def __str__(self):
         return self.name
-    
-    class Meta:
-        verbose_name = 'Кот'
-        verbose_name_plural = 'Коты'
-
-    class Meta:
-        verbose_name = 'Кот'
-        verbose_name_plural = 'Коты'
-
-    class Meta:
-        verbose_name = 'Кот'
-        verbose_name_plural = 'Коты'
 
 
 class AchievementCat(models.Model):
     achievement = models.ForeignKey(Achievement, on_delete=models.CASCADE)
     cat = models.ForeignKey(Cat, on_delete=models.CASCADE)
 
-    def __str__(self):
-        return f'{self.achievement} {self.cat}'
-
     class Meta:
         verbose_name = 'Достижение кота'
         verbose_name_plural = 'Достижения котов'
 
+    def __str__(self):
+        return f'{self.achievement} {self.cat}'
 
